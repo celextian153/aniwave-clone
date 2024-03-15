@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aniwave CLONE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1bc225d48e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <span class="logo"> <img src="images/logo1.png" alt="" class="w123"></span>
+        <div class="searchBox">
+            <i class="fa fa-search fa-2xs" aria-hidden="true"></i>
+            <input type="text" name="" placeholder="Search anime...">
+        </div>
+        <div class="searchIcon">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <button class="signInButton"></i>Sign in <i class="fa-solid fa-arrow-right"></i></button>
+        <ul class="navs">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Genre</a></li>
+            <li><a href="#">Types</a></li>
+            <li><a href="#">Ongoing</a></li>
+        </ul>
+    </nav>
+    <!-- slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <input type="radio" class="radio" name="images" id="radio-1" checked>
+            <input type="radio" class="radio" name="images" id="radio-2">
+            <input type="radio" class="radio" name="images" id="radio-3">
+
+            <div class="slide" id="slide-1">
+                <div class="bluredleft"></div>
+                <img src="images/jujutsu3.jpg" alt="" class="sl-img">
+                <div class="caption">
+                    <span>Jujutsu Kaisen</span>
+                    <div class="caption-text">
+                        The year is 2006, and the halls of Tokyo Prefectural Jujutsu High School echo with the endless bickering and intense debate between
+                        two inseparable best friends. Exuding unshakeable confidence, Satoru Gojou and Suguru Getou believe there is no challenge too great
+                        for young and powerful Special Grade sorcerers such as themselves. They are tasked with safely delivering a sensible girl named Riko
+                        Amanai to the entity whose existence is the very essence of the jujutsu world. However, the mission plunges them into an exhausting swirl
+                        of moral conflict that threatens to destroy the already feeble amity between sorcerers and ordinary humans.
+                    </div>
+                    <button class="playNowBtn"><i class="fa-solid fa-play slider-play-icon" ></i>PLAY NOW</button>
+                </div>     
+            </div>
+            <div class="slide" id="slide-3">
+                <div class="bluredleft"></div>
+                <img src="images/kor1.jpeg" alt="" class="sl-img">
+                <div class="caption">
+                    <span>The kingdom of Ruin</span>
+                    <div class="caption-text">
+                        For ages, humanity flourished through the power of magic, a 
+                        gift from witches to aid mankind. But times have changed. The 
+                        scientific Gear Expansion has made both magic and witches obsolete. 
+                        In order to liberate humanity from the blight of magic, the mighty 
+                        Redia Empire began a ruthless hunt to exterminate all witches.
+                    </div>
+                    <button class="playNowBtn"><i class="fa-solid fa-play slider-play-icon" ></i>PLAY NOW</button>
+        
+                </div>
+            </div>
+            <div class="slide" id="slide-2">
+                <div class="bluredleft"></div>
+                <img src="images/onepiece1.jpe" alt="" class="sl-img">
+                <div class="caption">
+                    <span>One Piece</span>
+                    <div class="caption-text">
+                        Barely surviving in a barrel after passing through a terrible whirlpool at sea,
+                       carefree Monkey D. Luffy ends up aboard a ship under attack by fearsome pirates. Despite 
+                       being a naive-looking teenager, he is not to be underestimated. Unmatched in batt...
+                    </div>
+                    <button class="playNowBtn"><i class="fa-solid fa-play slider-play-icon"></i>PLAY NOW</button>
+                </div>
+            </div>
+            <div class="dots">
+                <label for="radio-1" id="label-1"></label>
+                <label for="radio-2" id="label-2"></label>
+                <label for="radio-3" id="label-3"></label>
+            </div>
+        </div>
+    </div>
+    <!-- after slider -->
+    <div class="afterSlider-container">
+        <div class="row">
+            <!-- LEFT SIDE OF AFTERSLIDER CONTAINER -->
+            <div class="as-col-1">
+                <div class="share-div">
+                    <p id="text1">If you enjoy the website, please consider sharing it with your friends. Thank you!</p>
+                    <div class="shareBtns-div">
+                        <p id="text2">216k <br> <span id="shareSpan">Shares</span></p>
+                        <button class="shareBtns" id="fbBtn">32k</button>
+                        <button class="shareBtns" id="twitterBtn">72.1k</button>
+                        <button class="shareBtns" id="messengerBtn">32k</button>
+                        <button class="shareBtns" id="redditBtn">62.4k</button>
+                        <button class="shareBtns" id="whatsappBtn">16.9k</button>
+                        <button class="shareBtns" id="telegramBtn"></button>
+                    </div>
+                </div>
+                <div class="recently-updated-header">
+                    <div class="ru-lside">
+                        <h2>Recently Updated</h2>
+                    </div>
+                    <div class="ru-rside">  
+                        <ul class="ru-ul">
+                            <li class="ru-li"><a href="#">All</a></li>
+                            <li class="ru-li"><a href="#">Sub</a></li>
+                            <li class="ru-li"><a href="#">Dub</a></li>
+                            <li class="ru-li"><a href="#">Chinese</a></li>
+                            <li class="ru-li"><a href="#">Trending</a></li>
+                            <li class="ru-li"><a href="#">Randon</a></li>
+                            <li class="ru-li"><a href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+                            <li class="ru-li"><a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ru-container">
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/jujutsu2.jpg" alt="" class="ru-item-img">
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 17
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                        <span class="ru-item-title">JUJUTSU KAISEN SEASON 2</span>
+                    </div>
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/onepiece2.jpg" alt="" class="ru-item-img">
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 1084
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 1036
+                            </span>
+                        </div>
+                        <span class="ru-item-title">ONE PIECE</span>
+                    </div>
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/kor2.jpg" alt="" class="ru-item-img">
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                        <span class="ru-item-title">KINGDOM OF RUINS</span>
+                    </div>
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/eminence1.jpeg" alt="" class="ru-item-img">
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                        <span class="ru-item-title">THE EMINENCE IN SHADOW</span>
+                    </div>
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/tokyoRevengers.jpg" alt="" class="ru-item-img">
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 24
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                        <span class="ru-item-title">TOKYO REVENGERS</span>
+                    </div>
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/spyxfamily.jpg" alt="" class="ru-item-img">
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 24
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                        <span class="ru-item-title">SPY X FAMILY</span>
+                    </div>
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/fullmetalAlchemist.jpg" alt="" class="ru-item-img">
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 56
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                        <span class="ru-item-title">FULLMETAL ALCHEMIST</span>
+                    </div>
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/frieren.jpg" alt="" class="ru-item-img">
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 1084
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                        <span class="ru-item-title">SOUSOU NO FRIEREN</span>
+                    </div>
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/codeGeass.jpeg" alt="" class="ru-item-img">
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 24
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                        <span class="ru-item-title">CODE GEASS</span>
+                    </div>
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/hunterxhunter.jpg" alt="" class="ru-item-img">
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 148
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                        <span class="ru-item-title">HUNTER X HUNTER</span>
+                    </div>
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/aot.jpg" alt="" class="ru-item-img" >
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 88
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                        <span class="ru-item-title">ATTACK ON TITAN</span>
+                    </div>
+                    <div class="ru-item-container">
+                        <div class="ru-item-div">
+                            <img src="images/bleach.jpg" alt="" class="ru-item-img" >
+                            <i class="fa-solid fa-play ru-play-icon" ></i>
+                        </div>
+                        <div class="ru-item">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 366
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                        <span class="ru-item-title">BLEACH</span>
+                    </div>
+                </div>
+                <div class="released-container">
+                    <div class="up-container">
+                        <span class="rc-title-span">NEW RELEASE <i class="fa-solid fa-arrow-right"></i></span>
+                        <div class="nr-div">
+                            <div class="rc-container">
+                                <img src="images/bleach.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Bleach</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/onepiece2.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>One Piece</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/aot.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Attack On Titan</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/codeGeass.jpeg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Code Geass</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/jujutsu2.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Jujutsu Kaisen</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="up-container">
+                        <span class="rc-title-span">NEW ADDED <i class="fa-solid fa-arrow-right"></i></span>
+                        <div class="na-div">
+                            <div class="rc-container">
+                                <img src="images/boruto.jpeg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Boruto: Naruto Next Generation</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/eminence2.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Eminence In Shadow 2nd Season</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/frieren.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Frieren: Beyond Journey's End</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/ragnacrimson.jpeg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Ragna Crimson</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/detectiveconan.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Detective Conan</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="up-container">
+                        <span class="rc-title-span">JUST COMPLETED <i class="fa-solid fa-arrow-right"></i></span>
+                        <div class="jc-div">
+                            <div class="rc-container">
+                                <img src="images/spyxfamily.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Spy x Family</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/hunterxhunter.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Hunter X Hunter</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/tokyoRevengers.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Tokyo Revengers</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/kor2.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Kingdom Of Ruins</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rc-container">
+                                <img src="images/fullmetalAlchemist.jpg" alt="" class="rc-img">
+                                <div class="rc-item">
+                                    <span>Fullmetal Alchemist Brotherhood</span><br>
+                                    <div class="rc-badge-div">
+                                        <span class="ccBadge">
+                                            <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- schedule container -->
+                <div class="sched-container">
+                    <div class="sched-header">
+                        <div class="sched-head-title">
+                            <span id="est-sched-span"> Estimated Schedule </span>
+                            <span id="dt-span">- Now: mm/dd/yr  TIME: hour/minute/seconds  </span> 
+                        
+                        </div>
+                        <div class="sched-div">
+                            <span class="lr-chevron"><i class="fa-solid fa-chevron-left" class="rr1"></i></span>
+                            <span class="date-span" id="sched-1">Nov 22 <br> <span class="day-span">WED</span> </span>
+                            <span class="date-span" id="sched-2">Nov 23 <br> <span class="day-span">THU</span> </span>
+                            <span class="date-span" id="sched-3">Nov 24 <br> <span class="day-span">FRI</span> </span>
+                            <span class="date-span" id="sched-4">Nov 25 <br> <span class="day-span">SAT</span> </span>
+                            <span class="date-span" id="sched-5">Nov 26 <br> <span class="day-span">SUN</span> </span>
+                            <span class="date-span" id="sched-6">Nov 27 <br> <span class="day-span">MON</span> </span>
+                            <span class="date-span" id="sched-7">Nov 28 <br> <span class="day-span">TUE</span> </span>
+                            <span class="lr-chevron"><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="anime-sched-div">
+                        <div class="anime-sched">
+                            <div class="anime-sched-title">
+                                <span class="as-time-span">05:00</span>
+                                <span class="as-title-span">The Ancient Magus Bride Season 2 Part 2</span>
+                            </div>
+                            <div class="as-button-div">
+                                <button class="as-button"><i class="fa-solid fa-play" style="margin-right: 11px;"></i>Episode 8</button>
+                            </div>
+                        </div>
+                        <div class="anime-sched">
+                            <div class="anime-sched-title">
+                                <span class="as-time-span">06:00</span>
+                                <span class="as-title-span">Dragon Ball </span>
+                            </div>
+                            <div class="as-button-div">
+                                <button class="as-button"><i class="fa-solid fa-play" style="margin-right: 11px;"></i>Episode 8</button>
+                            </div>
+                        </div>
+                        <div class="anime-sched">
+                            <div class="anime-sched-title">
+                                <span class="as-time-span">07:00</span>
+                                <span class="as-title-span">No Game No Life</span>
+                            </div>
+                            <div class="as-button-div">
+                                <button class="as-button"><i class="fa-solid fa-play" style="margin-right: 11px;"></i>Episode 9</button>
+                            </div>
+                        </div>
+                        <div class="anime-sched">
+                            <div class="anime-sched-title">
+                                <span class="as-time-span">08:00</span>
+                                <span class="as-title-span">Death Note</span>
+                            </div>
+                            <div class="as-button-div">
+                                <button class="as-button"><i class="fa-solid fa-play" style="margin-right: 11px;"></i>Episode 21</button>
+                            </div>
+                        </div>
+                        <div class="anime-sched">
+                            <div class="anime-sched-title">
+                                <span class="as-time-span">09:30</span>
+                                <span class="as-title-span">Naruto Shippuden</span>
+                            </div>
+                            <div class="as-button-div">
+                                <button class="as-button"><i class="fa-solid fa-play" style="margin-right: 11px;"></i>Episode 165</button>
+                            </div>
+                        </div>
+                        <div class="anime-sched">
+                            <div class="anime-sched-title">
+                                <span class="as-time-span">10:00</span>
+                                <span class="as-title-span">One-punch Man</span>
+                            </div>
+                            <div class="as-button-div">
+                                <button class="as-button"><i class="fa-solid fa-play" style="margin-right: 11px;"></i>Episode 12</button>
+                            </div>
+                        </div>
+                        <div class="anime-sched">
+                            <div class="anime-sched-title">
+                                <span class="as-time-span">12:00</span>
+                                <span class="as-title-span">FULL METAL ALCHEMIST BROTHERHOOD</span>
+                            </div>
+                            <div class="as-button-div">
+                                <button class="as-button"><i class="fa-solid fa-play" style="margin-right: 11px;"></i>Episode 34</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showmore-div">
+                        <span>Show more</span>
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT SIDE OF AFTERSLIDER CONTAINER -->
+            <div class="as-col-2">
+                <div class="tadwmRightSide">
+                    <div class="ta-lside">
+                        <p id="taP">Top anime</p>
+                    </div>
+                    <div class="ta-rside">
+                        <div class="btn-group" id="dwmGBtn">
+                            <button class="dayBtn" >Day</button>
+                            <button class="weekBtn" >Week</button>
+                            <button class="monthBtn" >Month</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-topAnime">
+                    <span class="md-span" id="t1">1</span>
+                    <img src="images/jujutsu1.jpg" alt="" class="md-img-topAnime">
+                    <div class="topAnimeInfo">
+                        <span class="sm-span">JUJUTSU KAISEN SEASON 2<br></span>
+                        <div class="ta-badge-div">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 17
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 15
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-topAnime">
+                    <span class="md-span" id="t2">2</span>
+                    <img src="images/onepiece1.jpe" alt="" class="md-img-topAnime">
+                    <div class="topAnimeInfo">
+                        <span class="sm-span">ONE PIECE<br></span>
+                        <div class="ta-badge-div">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 1084
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 1030
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-topAnime">
+                    <span class="md-span" id="t3">3</span>
+                    <img src="images/kor1.jpeg" alt="" class="md-img-topAnime">
+                    <div class="topAnimeInfo">
+                        <span class="sm-span">KINGDOM OF RUINS<br></span>
+                        <div class="ta-badge-div">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 5
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-topAnime">
+                    <span class="md-span" id="t4">4</span>
+                    <img src="images/codeGeass.jpeg" alt="" class="md-img-topAnime">
+                    <div class="topAnimeInfo">
+                        <span class="sm-span">CODE GEASS<br></span>
+                        <div class="ta-badge-div">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 5
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-topAnime">
+                    <span class="md-span" id="t4">5</span>
+                    <img src="images/frieren.jpg" alt="" class="md-img-topAnime">
+                    <div class="topAnimeInfo">
+                        <span class="sm-span">FREIREN:BEYOND JOURNEYS END<br></span>
+                        <div class="ta-badge-div">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 5
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-topAnime">
+                    <span class="md-span" id="t4">6</span>
+                    <img src="images/fullmetalAlchemist.jpg" alt="" class="md-img-topAnime">
+                    <div class="topAnimeInfo">
+                        <span class="sm-span">FULLMETAL ALCHEMIST BROTHERHOOD<br></span>
+                        <div class="ta-badge-div">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 5
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-topAnime">
+                    <span class="md-span" id="t4">7</span>
+                    <img src="images/boruto.jpeg" alt="" class="md-img-topAnime">
+                    <div class="topAnimeInfo">
+                        <span class="sm-span">BORUTO<br></span>
+                        <div class="ta-badge-div">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 5
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-topAnime">
+                    <span class="md-span" id="t4">8</span>
+                    <img src="images/hunterxhunter.jpg" alt="" class="md-img-topAnime">
+                    <div class="topAnimeInfo">
+                        <span class="sm-span">HUNTER X HUNTER<br></span>
+                        <div class="ta-badge-div">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 5
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-topAnime">
+                    <span class="md-span" id="t4">9</span>
+                    <img src="images/detectiveconan.jpg" alt="" class="md-img-topAnime">
+                    <div class="topAnimeInfo">
+                        <span class="sm-span">DETECTIVE CONAN<br></span>
+                        <div class="ta-badge-div">
+                            <span class="ccBadge">
+                                <i class="fa-regular fa-closed-captioning" style="color: #dee4ed;"></i> 7
+                            </span>
+                            <span class="dubBadge">
+                                <i class="fa-solid fa-microphone" style="color: #e4e9f1;"></i> 5
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="bg-filter">
+        </div>
+        <div class="footer-content">
+            <div class="search-list-div">
+                <span class="footer-title"> A-Z List</span>
+                <span class="footer-sm-text">Searching anime order by alphabet name A to Z. <br></span>
+                <div class="buttons-div">
+                    <button class="selection-button">All</button>
+                    <button class="selection-button">0-9</button>
+                    <button class="selection-button">A</button>
+                    <button class="selection-button">B</button>
+                    <button class="selection-button">C</button>
+                    <button class="selection-button">D</button>
+                    <button class="selection-button">E</button>
+                    <button class="selection-button">F</button>
+                    <button class="selection-button">G</button>
+                    <button class="selection-button">H</button>
+                    <button class="selection-button">I</button>
+                    <button class="selection-button">J</button>
+                    <button class="selection-button">K</button>
+                    <button class="selection-button">L</button>
+                    <button class="selection-button">M</button>
+                    <button class="selection-button">N</button>
+                    <button class="selection-button">O</button>
+                    <button class="selection-button">P</button>
+                    <button class="selection-button">Q</button>
+                    <button class="selection-button">R</button>
+                    <button class="selection-button">S</button>
+                    <button class="selection-button">T</button>
+                    <button class="selection-button">U</button>
+                    <button class="selection-button">V</button>
+                    <button class="selection-button">W</button>
+                    <button class="selection-button">X</button>
+                    <button class="selection-button">Y</button>
+                    <button class="selection-button">Z</button>
+                </div>
+            </div>
+            <div class="footer-flex-div footer-div-logo">
+                <img src="images/logo1.png" alt="" class="footer-logo">
+                <div class="jn-btn-logo">
+                    <span class="jn-text">Join Now</span>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-reddit-alien"></i>
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+                
+            </div>
+            <div class="footer-flex-div">
+                <span class="footer-sm-text">Help</span>
+                <span class="footer-sm-links">FAQ</span>
+                <span class="footer-sm-links">Contact</span>
+                <span class="footer-sm-links">Request</span>
+            </div>
+            <div class="footer-flex-div">
+                <span class="footer-sm-text">Friends</span>
+                <span class="footer-sm-links">fmovies</span>
+                <span class="footer-sm-links">read manga online</span>
+                <span class="footer-sm-links">gogoanime</span>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

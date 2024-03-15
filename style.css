@@ -1,0 +1,1150 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "cocomilk";
+    src: url("fonts/CocoMilk-2OvpX.otf");
+}
+body{
+    font-family: 'Trebuchet MS';
+    background-color:#0E0E0E;
+}
+nav{
+    background-color: #1C1C1C;
+    height: 70px;
+}
+span.logo{
+    position: absolute;
+    font-size: 35px;
+    line-height: 50px;
+    top: 1%;
+    left: 70px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.w123{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 50px;
+}
+span.span1{
+    color: #7951CB;
+}
+nav ul li{
+    line-height: 50px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #9C9C9C;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: block;
+}
+.checkbtn{
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    font-size: 35px;
+    color: white;
+    line-height: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 0 0 0 0;
+    display: block;
+}
+.checkbtn:hover{
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+ul.navs{
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    background-color: #171717;
+    top: 75px;
+    left: -101%;
+    text-align: center;
+    border-radius: 5px;
+}
+a:hover,a.active{
+    background: none;
+    background-color: #0E0E0E;
+}
+
+#check:checked ~ ul{
+    left:5px;
+    position: relative;
+    z-index: 1;
+}
+.searchBox{
+    position: absolute;
+    height: 40px;
+    line-height: 25px;
+    top: 17px;
+    left: 280px;
+    background-color: #171717;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+}
+.searchBox > i {
+    font-size: 15px;
+    padding: 0 10px;
+    color: #656565;
+}
+.searchBox > input {
+    background-color: #171717;
+    border: none;
+    color: #656565;
+    flex: 1;
+    width: 70vh;
+    text-align: left;
+    align-items: center;
+}
+.searchBox > input:focus{
+    outline: none;
+}
+.signInButton{
+    position: absolute;
+    right: 25px;
+    top: 17px;
+    height: 40px;
+    padding: 0 20px 0 20px;
+    border-radius: 5px;
+    background-color: #5E309F;
+    color: white;
+    border: none;
+    opacity: 80%;
+}
+.signInButton:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+.searchIcon{
+    position: absolute;
+    top: 22px;
+    right: 130px;
+    color: white;
+    cursor: pointer;
+    visibility: hidden;
+    font-size: 26px;
+}
+
+
+/* slider */
+.radio{
+    display: none;
+}
+
+.slider-container{
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    margin: 1% auto;
+}
+
+.slider{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    height: 0;
+    padding-top: 28%;
+    background: #0E0E0E;
+    overflow: hidden;
+    
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.slide img{
+    width: 60%;
+    height: 90%;
+    position: absolute;
+    right: 1%;
+    /* object-fit: cover; */
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.caption{
+    position: absolute;
+    width: 100%;
+    left: 2%;
+    top: 10%;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 50px;
+    transition: 0.9s;
+}
+.caption span {
+    display: block;
+    text-transform:initial;
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: 800;
+    color: #FFFFFF;
+    line-height: 15px;
+}
+.caption-text{
+    font-size: 15px;
+    padding-top: 3%;
+    color: #6B6B6B;
+    line-height: 20px;
+    width: 35%; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.playNowBtn{
+    display: block;
+    height: 40px;
+    width: 150px;
+    margin-top: 30px;
+    padding: 0 20px 0 20px;
+    border-radius: 5px;
+    background-color: #5E309F;
+    color: white;
+    border: none;
+}
+.playNowBtn:hover{
+    cursor: pointer;
+}
+.slider-play-icon{
+    margin-right: 5px;
+}
+.dots{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: flex;
+    justify-content:left;
+    letter-spacing: 50%;
+
+}
+.dots label{
+    width: 10px;
+    height: 10px;
+    background: #5C5C5C;
+    margin: 20px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+#radio-1:checked ~ #slide-1,
+#radio-2:checked ~ #slide-2,
+#radio-3:checked ~ #slide-3{
+    opacity: 1;
+}
+
+#radio-1:checked ~ .dots #label-1,
+#radio-2:checked ~ .dots #label-2,
+#radio-3:checked ~ .dots #label-3{
+    background: #5A2E98;
+    opacity: 1;
+}
+
+/* After Slider */
+.afterSlider-container{
+    padding: 5px 0;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.as-col-1{
+    flex-basis: 75%;
+}
+.as-col-2{
+    flex-basis: 24%;
+    padding-top: 10px;
+}
+.share-div{
+    background-color: #040404;
+    margin: 1%;
+    display: flex;
+    border-radius: 6px;
+    flex-direction: column;
+    justify-content:start;
+    padding: 10px;
+    width: 100%;
+}
+.shareBtns-div{
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+}
+#text1{
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+    letter-spacing: 0.8;
+    padding-left: 2%;
+}
+#text2{
+    color: #6B6B6B;
+    margin-left: 4%;
+}
+#shareSpan{
+    font-size: 10px;
+}
+.shareBtns{
+    width: 120px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#fbBtn{
+    background-color: #4267B2;
+}
+#twitterBtn{
+    background-color: #040404;
+}
+#messengerBtn{
+    background-color: #448AFF;
+}
+#redditBtn{
+    background-color: #FF4500;
+}
+#whatsappBtn{
+    background-color: #25D366;
+}
+#telegramBtn{
+    background-color: #0088CC;
+}
+#fbBtn:hover, #twitterBtn:hover, #messengerBtn:hover, #redditBtn:hover, #whatsappBtn:hover, #telegramBtn:hover{
+    margin-top: 1px;
+    margin-bottom: 3px;
+}
+#dwmGBtn{
+    background-color: #1C1C1C;
+    border: none;
+    width: 170px;
+    text-align: center;
+    line-height: 1.6;
+    border-radius: 4px;
+    float: right;
+    margin-right: 15px;
+    
+}
+
+.dayBtn{
+    background-color: #5E309F;
+    border:none;
+    height: 26px;
+    width: 30%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0 5px 0;
+    color: white;
+}
+.weekBtn, .monthBtn{
+    background-color: #1C1C1C;
+    border:none;
+    height: 26px;
+    width: 30%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0 5px 0;
+    color: white;
+}
+.weekBtn:hover, .monthBtn:hover{
+    background-color: #AAAAAA;
+    color: black;
+}
+.tadwmRightSide{
+    display: flex;
+    flex-wrap: wrap;
+}
+#taP{
+    font-size: 20px;
+}
+.ta-rside, .ta-lside{
+    width: 50%;
+}
+.sm-topAnime{
+    display: flex;
+    width: 95%;
+    background-color: #1C1C1C;
+    height: 90px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.sm-topAnime:hover{
+    background-color: #242424;
+    cursor: pointer;
+}
+.sm-topAnime:hover .sm-span{
+    color: #9866df;
+}
+.md-span{
+    font-size: 70px;
+    font-family: "cocomilk";
+    text-align: center;
+    width: 60px;
+}
+.sm-span{
+    font-size: 15px;
+    color: #AAAAAA;
+}
+.md-img-topAnime{
+    height: 100%;
+    width: 60px;
+    object-fit: cover;
+}
+.topAnimeInfo{
+    width: 90%;
+    margin-left: 15px;
+}
+.ta-badge-div{
+    margin-top: 4px;
+}
+.ccBadge{
+    background-color: #5E309F;
+    color: white;
+    padding: 5px 8px 5px 8px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    margin:auto 0 auto 5px;
+    
+}
+.dubBadge{
+    background-color: #846806;
+    color: white;
+    padding: 5px 8px 5px 8px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+#t1{
+    color: #5E309F;
+}
+#t2{
+    color: #AA4658;
+}
+#t3{
+    color: #9E7B42;
+}
+#t4{
+    color: #5C5C5C;
+}
+.recently-updated-header{
+    display: flex;
+    flex: wrap;
+    
+}
+.ru-li{
+    display: inline;
+}
+.ru-rside{
+    width: 50%;
+}
+.ru-lside{
+    width: 50%;
+}
+.ru-ul{
+    float: right;
+}
+.ru-li > a {
+    margin-left: 10px;
+    color: #656565;
+}
+.ru-li > a:hover{
+    color: white;
+}
+
+.ru-container, .released-container, .sched-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 15px;
+}
+.sched-container{
+    padding-bottom: 60px;
+}
+.ru-item-container{
+    width: 14%;
+    /* height: 330px; */
+    margin: 20px 13px 20px 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+}
+
+.ru-item{
+    border-radius: 0 0 10px 10px;
+    background-color: #1C1C1C;
+    height: 33px;
+    display: flex;
+    align-items: center;
+}
+.ru-item-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.ru-play-icon{
+    color: white;
+    position: absolute;
+    margin: auto;
+    opacity: 0;
+}
+
+.ru-item-container:hover{
+    cursor: pointer;
+}
+.ru-item-div:hover .ru-item-img{
+    opacity: 0.5;
+}
+.ru-item-div:hover .ru-play-icon{
+    opacity: 1;
+}
+.ru-item-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ru-item-title{
+    font-size: 17px;
+    padding-top: 10px;
+    color: #aaaaa2;
+}
+.ru-item-title:hover{
+    color:#7951CB;
+}
+.nr-div, .na-div, .jc-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.up-container{
+    width: 32%;
+    /* height: 500px; */
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.nr-div > span{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.na-div > span{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.jc-div > span{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.rc-container{
+    width: 98%;
+    height: 18%;
+    background-color: #1C1C1C;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.rc-img{
+    width: 13%;
+    height: 80%;
+    background-size: cover;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.rc-item{
+    width: 80%;
+    margin-left: 10px;
+}
+.rc-badge-div{
+    padding-top: 5px;
+}
+.rc-badge-div > .ccBadge{
+    margin-left: 0px;
+}
+.rc-title-span{
+    font-size: 23px;
+    color: #aaaaa2;
+}
+/* schedule container CSS */
+.sched-header{
+    width: 100%;
+    height: 150px;
+    margin: 20px 13px 0 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    background-color: #1B1B1C;
+    border-radius: 5px 5px 0 0;
+}
+.sched-head-title{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+#dt-span{
+    font-size: 15px;
+    color: #5C5C5C;
+    padding-left: 5px;
+}
+#est-sched-span{
+    font-size: 23px;
+    color: white;
+}
+.sched-div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    align-items: center;
+}
+.date-span{
+    font-size: 20px;
+    color: #444444;
+}
+.day-span{
+    font-size: 34px;
+}
+.date-span:hover {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.anime-sched-div{
+    width: 100%;
+    height: 100%;
+    margin: 0 13px 0 13px;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content:start;
+    background-color: #171717;
+    color: #444444;
+}
+.anime-sched-title{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.lr-chevron:hover{
+    cursor: pointer;
+}
+.as-span{
+    width: 10%;
+}
+.as-title-span{
+    width: 100%;
+    margin-left: 20px;
+}
+.as-button-div{
+    width: 20%;
+}
+.anime-sched{
+    display: flex;
+    
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.as-button{
+    padding: 5px 0 20px 0;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+    color: #5C5C5C;
+    background-color: #1C1C1C;
+    cursor: pointer;
+}
+.anime-sched:hover{
+    background-color: #1B1B1B;
+}
+.anime-sched:hover .as-button{
+    background-color: #592E95;
+    color: white;
+}
+.anime-sched:hover .as-title-span{
+    color: #A885DA;
+}
+.showmore-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #181818;
+    color: #5C5C5C;
+    margin: 0 13px 0 13px;
+    border-radius: 0 0 5px 5px ;
+    cursor: pointer;
+}
+.showmore-div:hover{
+    background-color: #1A1A1A;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 500px;
+    background-image: url("images/footer-kakashi.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+.bg-filter{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(26, 26, 26, 0.772) 0%, rgba(0,0,0,0.4990429236147583) 50%, rgba(0,0,0,0.7720429236147583) 100%);
+}
+.footer-content{
+    position: absolute;
+    margin: 80px 50px 0 80px;
+}
+.footer-title{
+    font-size: 28px;
+    margin-right: 30px;
+    color: white;
+}
+.footer-sm-text{
+    font-size: 15px;
+    color: #5c5959;
+}
+.buttons-div{
+    padding-top: 5px;
+}
+.selection-button{
+    border: none;
+    border-radius: 5px;
+    padding:6px 9px 6px 9px;
+    background-color: #2E2E2E;
+    color: white;
+    font-size: 21px;
+    margin: 7px 2px 7px 2px;
+    cursor: pointer;
+}
+.selection-button:hover{
+    background-color: #5E309F;
+}
+.footer-logo{
+    height: 40px;
+    margin-right: 30px;
+}
+.jn-btn-logo{
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 17px;
+}
+.jn-btn-logo > .fa-brands{
+    padding-left: 8px;
+    font-size: 21px;
+}
+.footer-flex-div{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.footer-flex-div > span{
+    margin-right: 15px;
+}
+.footer-div-logo{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.fa-twitter{
+    color: #1DA1F2;
+}
+.jn-text{
+    color: black;
+    margin-left: 18px;
+}
+.footer-sm-links{
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.footer-sm-links:hover{
+    color: #7951CB;
+    opacity: 1;
+}
+/* extra large screens */
+@media (max-width: 1300px) {
+    html, body {
+        overflow-x: clip;
+     }
+    .sl-img{
+        display: none;
+    }
+    #slide-1{
+        background-image: url("images/jujutsu3.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+    }
+    #slide-2{
+        background-image: url("images/onepiece1.jpe");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #slide-3{
+        background-image: url("images/kor1.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .slider{
+        height: 400px;
+        
+    }
+    .bluredleft{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: linear-gradient(to right, rgb(0, 0, 0) 0%,rgba(7, 1, 1, 0.438) 69%)
+    }
+    .caption p{
+        color: white;
+    }
+    .as-col-1{
+        flex-basis: 100%;
+    }
+    .as-col-2{
+        flex-basis: 100%;
+        padding-top: 50px;
+    }
+    .shareBtns{
+        width: 10%;
+    }
+    .sm-topAnime , #taP{
+        margin-left: 5px;
+    }
+    
+    .ru-item-container{
+        width: 17%;
+        height: auto;
+        padding: auto;
+        margin: auto 1% auto 1%;
+    }
+    .nr-div, .na-div, .jc-div {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .rc-container{
+        width: 45%;
+        height: auto;
+        margin: 5px;
+    }
+    .up-container{
+        width: 100%;
+        margin: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        height: auto;
+    }
+    .released-container{
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+    }
+    .sm-topAnime{
+        width: 99%;
+    }
+    .as-col-2{
+        padding-bottom: 50px;
+    }
+}
+/* desktop/large screens */
+@media (max-width: 1024px) {
+    .recently-updated-header{
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+    }
+    .ru-rside{
+        width: 100%;
+    }
+    .ru-lside{
+        width: 100%;
+    }
+    .ru-ul{
+        float: left;
+        margin-top: 10px;
+    }
+    .ru-item-container{
+        width: 22%;
+        margin: 3% 1% 1% 1%;
+    }
+    .searchBox{
+        width: 45%;
+    }
+    .caption-text{
+        width: 50%; 
+    }
+}
+/* small screens/laptops */
+@media (max-width: 768px) {
+    .w123{
+        top: 10px;
+        height: 40px;
+    }
+    .checkbtn{
+        font-size: 25px;
+    }
+    
+    .caption span{
+        font-size: 20px;
+    }
+    .ru-item > .ccBadge{
+        font-size: 10px;
+        margin: 0;
+        margin-left: 3px;
+    }
+    .ru-item > .dubBadge{
+        font-size: 10px;
+        margin: 0;
+        margin-left: 3px;
+    }
+    .ru-item-title{
+        font-size: 12px;
+    }
+    .ru-item{
+        font-size: 10px;
+    }
+    .search-list-div{
+        display: none;
+    }
+    .footer-content{
+        width: 100%;
+        margin: 0;
+    }
+    .footer-flex-div{
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-div-logo{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer{
+        height: 250px;
+    }
+    .bg-filter{
+        height: 250px;
+    }
+    .searchBox{
+        display: none;
+    }
+    .searchIcon{
+        visibility:visible;
+    }
+    .searchIcon:hover{
+        color: #592E95;
+    }
+    .dots{
+        width: 15px;
+        position: absolute;
+        bottom: 5%;
+        left:auto;
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+    }
+    .dots label{
+        width: 10px;
+        height: 10px;
+        background: #FFFFFF;
+        margin: 5px 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .caption{
+        top: auto;
+        bottom: 5%;
+        font-weight: 500;
+        font-size: 50px;
+    }
+    .caption span {
+        font-size: 40px;
+        color: #FFFFFF;
+        line-height: 1;
+    }
+    .caption-text{
+        font-size: 8px;
+        color: #FFFFFF;
+        width: 50%; 
+        -webkit-line-clamp: 2;
+    }
+    .topAnimeInfo{
+        width: 90%;
+        margin-left: 15px;
+    }
+    .as-button{
+        width: 120px;
+    }
+    
+}
+/* mobile devices */
+@media (max-width: 480px) {
+    .w123{
+        top: 15px;
+        left: 5px;
+        height: 30px;
+    }
+    .checkbtn{
+        font-size: 20px;
+    }
+    .ru-container{
+        width: 95%;
+    }
+    .ru-item-container{
+        width: 30%;
+    }
+    .rc-container{
+        width: 100%;
+    }
+    .nr-div, .na-div, .jc-div {
+        width: 100%;
+        height: auto;
+    }
+    .sm-topAnime{
+        width: 95%;
+    }
+    .up-container{
+        width: 95%;
+    }
+    .caption span {
+        font-size: 30px;
+    }
+    .sched-container{
+        width: 100%;
+    }
+    .sched-header{
+        width: 94%;
+        
+    }
+    .sched-head-title{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    #dt-span{
+        padding-top: 5px;
+    }
+    #est-sched-span{
+        font-size: 23px;
+        padding-left: 40px;
+        color: white;
+        padding-top: 20px;
+    }
+    #sched-4,#sched-5,#sched-6,#sched-7{
+        display: none;
+    }
+    .date-span{
+        font-size: 14px;
+    }
+    .day-span{
+        font-size: 32px;
+    }
+    .as-title-span{
+        width: 100%;
+        margin: 5px 0;
+    }
+    .anime-sched{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 0;
+        padding-top: 5px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .as-button-div{
+        height: 100%;
+    }
+
+    .as-button{
+        padding: 2px 0 0 0;
+        margin-left: 0;
+        width: 90%;
+        height: 21px;
+        border-radius: 5px;
+        font-size: 9px;
+    }
+    .anime-sched-title{
+        width: 90%;
+        margin-left: 5px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        
+    }
+    .anime-sched:nth-child(odd){
+        background-color: #121212;
+    }
+    .as-time-span{
+        font-size: 11px;
+    }
+    .anime-sched:hover{
+        background-color: #592e95a6;
+    }
+    .anime-sched:hover .as-time-span{
+        color: white;
+    }
+    .rc-badge-div > .ccBadge{
+        font-size: 10px;
+    }
+}
